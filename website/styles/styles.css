@@ -1,0 +1,240 @@
+body {
+	color: #232323;
+	background: url(../images/bg_body.png) repeat-x;
+	background-color: #FFFFFF;
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	font-weight: normal; 
+}
+
+a { color: #215EA0; font-weight: bold;  }
+a:hover { color: #EBAA49; font-weight: bold; }
+
+h1 {
+	color: #0066CC;
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	color: #0066CC;
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+	color: #0066CC;
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h4 {
+	color: #0066CC;
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h5 {
+	color: #0066CC;
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h6 {
+	color: #0066CC;
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+p {
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+img {
+	border: 0px;
+}
+
+blockquote {
+	font:"Courier New", Courier, monospace;
+	font-family:"Courier New", Courier, monospace;
+	background-color:#FFFFFF;
+	color: #333333;
+	margin : 10px;
+	margin-left : 20px;
+	padding : 5px 10px 5px 20px;
+	border: 1px dotted #CCCCCC;
+	border-left: 20px solid #CCCCCC;
+	
+}
+
+li {
+	text-align: justify;
+	padding: 3px;
+}
+
+#webpage {
+	width: auto;
+	max-width: 100%;
+}
+
+.roadmapheader {
+	background-color: #6AAEF2;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+}
+
+.roadmaprow {
+	border: 1px solid #CCCCCC;
+	background-color: #F5F5F5;
+	height: auto;
+	vertical-align: top;
+}
+
+.progressheader {
+	background-color: #6AAEF2;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+}
+
+.jmfexamplesheader {
+	background-color: #6AAEF2;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+}
+
+.jmfprojectsheader {
+	background-color: #6AAEF2;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+}
+
+.jmfprojectsrow {
+	font-size: 10px;
+	height: auto;
+	vertical-align: top;
+}
+
+.screenshot {
+	border: 1px solid #CCCCCC;
+	background-color: #F5F5F5;
+	padding: 5px;
+}
+
+.livedemo {
+	border: 2px dashed #CCCCCC;
+	background-color: #F5F5F5;
+	vertical-align: middle;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	
+}
+
+.contributorsheader {
+	background-color: #6AAEF2;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+}
+
+.contributorsrow {
+	height: 45px;
+	vertical-align: top;
+}
+
+.generalheader {
+	background-color: #6AAEF2;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+}
+
+.medialibrary {
+	border: 2px dashed #CCCCCC;
+	background-color: #F5F5F5;
+	vertical-align: middle;
+	min-width: 650px;
+	min-height: 700px;
+	padding: 10px;
+	overflow: auto;
+}
+
+/*.header1 {
+	background: url(../images/header2_1.png);
+}
+
+.header2 {
+	background: url(../images/header2_2.png);
+}
+
+.header3 {
+	background: url(../images/header2_3.png);
+}
+
+.header4 {
+	background: url(../images/header2_4.png);
+}*/
+
+.footerad {
+	border: 1px solid #CCCCCC;
+	height: 120px;
+	vertical-align: middle;
+}
+
+.footertext {
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+	font-weight: bold; 
+	text-align: center;
+	padding: 5px;
+	/* border: 1px solid #CCCCCC; */ /*#93BCE1;*/
+	/*background-color: #C6E1FD; */
+}
+
+.rightpanel {
+	padding: 20px;
+	width: 250px;
+	border: 1px solid #CCCCCC; /*#93BCE1;*/
+	vertical-align: top;
+}
+
+.maincontent {
+	padding: 20px;
+	vertical-align: top;
+	border-left: 1px solid #CCCCCC; /*#93BCE1;*/
+	border-top: 1px solid #CCCCCC; /*#93BCE1;*/
+	border-bottom: 1px solid #CCCCCC; /*#93BCE1;*/
+}
+
+
+.mainmenu {
+	vertical-align: middle;
+	height: 50px;
+	/*height: 50px;*/
+	/*border: 1px solid #93BCE1;*/
+}
+
+.colortoggle0 {
+	background: #E9E9E9;
+}
+
+.colortoggle1 {
+	background: #FFFFFF;
+}
+
+.panelheader {
+	color: #454545;
+}

@@ -1,0 +1,90 @@
+README for ffmpeg-java
+
+NOTE: ffmpeg-java is not the same thing as FMJ, which stands for "Freedom for Media in Java".  ffmpeg-java is a subproject of FMJ.
+
+This project is licensed under the LGPL.  It has optional GPL components for using ffmpeg's GPL swscale library.  If you wish to use 
+swscale and the GPL, use ffmpeg-java-gpl.jar.  The standard LGPL jar for this project is ffmpeg-java.jar.
+
+ffmpeg-java is a Java wrapper around ffmpeg, using JNA.
+
+It assumes that dynamic libraries for ffmpeg have been compiled, and are in your library path.
+
+Note: mmx is disabled in this example, as it has caused problems in the past.
+
+Prerequisites:
+
+You must have a gcc build environment already set up.
+On Windows, follow the instructions at http://arrozcru.no-ip.org/ffmpeg_wiki/tiki-index.php
+On Mac OS X, install the developer tools that come with your OS.
+On Linux... well if you are running Linux you probably know how to get gcc working :)
+
+
+Step 1: Get ffmpeg sources from http://ffmpeg.mplayerhq.hu/
+
+It is recommended that you get the ffmpeg source code for which the JNA wrpper code was written. 
+This is revision 12162, Feb 20 2008. 
+You can obtain it using the following svn command:
+
+svn checkout -r 12162 svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg
+cd ffmpeg
+
+Step 2: build/install ffmpeg
+
+This step varies, depending on whether you are trying to simply install ffmpeg on the local system to develop and run, or
+if you are trying to build libraries to distribute.
+
+2a - EITHER - build/install on local system:
+
+LINUX/MAC/OTHER: ./configure --disable-mmx --enable-shared
+ON WINDOWS:      ./configure --disable-mmx --enable-shared --enable-memalign-hack
+make
+sudo make install
+
+2b - OR - build libraries to distribute:
+
+When the libraries are built as in 2a, they end up having the install dir hard-coded into the libraries themselves.
+This dir may be, for example, /usr/local/lib.  So to allow the ffmpeg libraries to simply be in the current dir of 
+your app (which is a lot easier to distribute), do:
+
+LINUX/MAC/OTHER: ./configure --disable-mmx --enable-shared --shlibdir=.
+ON WINDOWS:      ./configure --disable-mmx --enable-shared --shlibdir=. --enable-memalign-hack
+make
+
+Then manually copy the following libraries to your working directory, and/or include these files in the working directory
+of your distribution:
+libavcodec/libavcodec.dylib
+libavformat/libavformat.dylib
+libavutil/libavutil.dylib
+
+On Linux, you may need to create symbolic links from the "versioned" library names to the real ones:
+ln -s libavcodec.so libavcodec.so.51
+ln -s libavutil.so libavutil.so.49
+ln -s libavformat.so libavformat.so.52
+
+
+
+Step 3. run one of the sample programs with a media file as the first parameter.
+
+You may need to set your library path in order to find the installed ffmpeg dynamic libraries, for example:
+export LD_LIBRARY_PATH=/usr/local/lib
+
+PlayerExample: plays a movie in a window
+java -cp ./ffmpeg-java.jar:./lib/jna.jar net.sf.ffmpeg_java.example.PlayerExample http://www.javasaver.com/testjs/jmf/anim/2005-11-26.mov
+
+AVCodecSample: creates 5 ppm files in the current directory with the first 5 frames of the movie:
+java -cp ./ffmpeg-java.jar:./lib/jna.jar net.sf.ffmpeg_java.example.AVCodecSample http://www.javasaver.com/testjs/jmf/anim/2005-11-26.mov
+
+OutputExample: generates an mpeg movie to a file
+java -cp ./ffmpeg-java.jar:./ffmpeg-java-gpl.jar:./lib/jna.jar net.sf.ffmpeg_java.example.OutputExample output.mpg
+
+Notes from Stephan Goetter:
+
+
+Very good documentation how to setup build environment (msys and mingw) and how to build ffmpeg on windows can be found here:
+
+http://arrozcru.no-ip.org/ffmpeg_wiki/tiki-index.php
+
+The ffmpeg builts provided at http://arrozcru.no-ip.org/ffmpeg_builds/ have worked too,  but some image codec/format were missing.
+
+
+

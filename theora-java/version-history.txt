@@ -1,0 +1,20 @@
+Aug 22 2007
+
+Initial release.
+
+Aug 28 2007
+kenlars99 - added jheora-based example to build, and create jheora-patch.jar
+
+Release theora-java-20070828-1153
+
+Sep 7 2007
+kenlars99 - use URLs as input to sample programs.
+kenlars99 - build jars correctly (jheora-patch.jar was empty)
+
+Release theora-java-20070907-0809
+
+Sep 7 2007
+
+kenlars99 - correctly include jheora-patch.jar in build
+
+Release theora-java-20070907-0949

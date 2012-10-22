@@ -1,0 +1,19 @@
+----------------------
+ UPDATE INSTRUCTIONS
+----------------------
+
+/include/globals.php
+	- Change $LAST_UPDATED, when an update is applied to this website
+	- Change $WEB_ROOT variable, when website's root folder is relocated
+	
+/data/progress.csv 	
+	- Copy updated progress.csv from project root into /data/ directory
+	
+/data/screenshots.csv 
+	- Insert an entry into CSV file (follow the format)
+	- Copy small (~ 160x100) image into /images/screenshots/small/
+	- Copy large (~ 770x615) image into /images/screenshots/large/
+	- ATTN: please, follow the screenshot indexing system
+
+
+ 

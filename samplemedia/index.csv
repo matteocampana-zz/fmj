@@ -1,0 +1,15 @@
+Type,filename,Source of file,Container,Audio encoding,Video encoding
+Video,safexmas.mov,EJMF,mov,"Stream #0.1(eng): Audio: pcm_u8, 22050 Hz, mono, 176 kb/s","Stream #0.0(eng): Video: cinepak, yuv420p, 320x200, 30.00 fps(r)"
+Audio,attention.wav,,wav,"LINEAR, 12128.0 Hz, 8-bit, Mono, Unsigned, 12128.0 frame rate, FrameSize=8 bits",
+Audio,betterway.wav,EJMF,wav,"LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned, 22050.0 frame rate, FrameSize=8 bits",
+Audio,Glori_Patri.ogg,Public domain,ogg,"Vorbis, 44100.0 Hz, 16-bit, Stereo",
+Audio,gulp.wav,EJMF,wav,"LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned, 22050.0 frame rate, FrameSize=8 bits",
+Audio,gulp2.wav,EJMF,wav,"LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned, 22050.0 frame rate, FrameSize=8 bits",
+Audio,hen.mp3,,mp3,"AudioFormat [MPEG1L3, 44100.0 Hz, Mono, 38.28125 frame rate]",
+Audio,issues.au,EJMF,au,"ULAW, 8000.0 Hz, 8-bit, Mono, 8000.0 frame rate, FrameSize=8 bits",
+Audio,lion_roar.mp3,,mp3,"AudioFormat [MPEG1L3, 44100.0 Hz, Mono, 38.28125 frame rate]",
+Audio,santa.aiff,,aiff,"AudioFormat [LINEAR, 11025.0 Hz, 8-bit, Mono, Signed, 11025.0 frame rate, FrameSize=8 bits]",
+Video,Apollo_15_liftoff_from_inside_LM.ogg,"Wikimedia, public domain",ogg,Ogg logical stream 3177 is Vorbis 2 channel 44100 Hz audio.,Ogg logical stream 6256 is Theora 320x240 29.97002997002997 fps - 4:2:0 video - encoder specified ITU Rec 470M (NTSC) color
+
+
+Video,http://www.javasaver.com/testjs/jmf/anim/2005-11-26.mov,www.javasaver.com,mov,None,"Stream #0.0(eng): Video: mjpeg, yuvj420p, 352x288,  6.00 fps(r)"

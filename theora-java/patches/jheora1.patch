@@ -1,0 +1,36 @@
+### Eclipse Workspace Patch 1.0
+#P theora-java
+Index: src.jheora/com/fluendo/jheora/State.java
+===================================================================
+RCS file: /cvsroot/fmj/theora-java/src.jheora/com/fluendo/jheora/State.java,v
+retrieving revision 1.1
+diff -u -r1.1 State.java
+--- src.jheora/com/fluendo/jheora/State.java	27 Aug 2007 18:16:16 -0000	1.1
++++ src.jheora/com/fluendo/jheora/State.java	27 Aug 2007 19:04:45 -0000
+@@ -28,7 +28,7 @@
+ 
+ public class State 
+ {
+-  long granulepos;
++  public long granulepos;
+ 
+   private Playback pbi;
+   private Decode dec;
+Index: src.jheora/com/fluendo/jheora/Comment.java
+===================================================================
+RCS file: /cvsroot/fmj/theora-java/src.jheora/com/fluendo/jheora/Comment.java,v
+retrieving revision 1.1
+diff -u -r1.1 Comment.java
+--- src.jheora/com/fluendo/jheora/Comment.java	27 Aug 2007 18:16:12 -0000	1.1
++++ src.jheora/com/fluendo/jheora/Comment.java	27 Aug 2007 19:04:45 -0000
+@@ -25,8 +25,8 @@
+ package com.fluendo.jheora;
+ 
+ public class Comment {
+-  String[] user_comments;
+-  String vendor;
++  public String[] user_comments;
++  public String vendor;
+ 
+ 
+   public void clear() {
