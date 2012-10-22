@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84
+http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+    <url>
+         <loc>http://fmj-sf.net/index.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/downloads.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/screenshots.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/live_demo.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/roadmap.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/fmj/getting_started.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/fmj/troubleshooting.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/doc/fmj/index.html</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/fmj/supported_formats.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/fmj/links.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/fmj/join_team.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/fmj/contributors.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/fmj/engineering.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/fmj/media_library.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/ffmpeg-java/getting_started.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/doc/ffmpeg-java/index.html</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/theora-java/getting_started.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/doc/theora-java/index.html</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/jmf/projects.php</loc>
+    </url>
+    <url>
+         <loc>http://fmj-sf.net/jmf/examples.php</loc>
+    </url>
+</urlset>

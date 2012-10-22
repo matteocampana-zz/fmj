@@ -1,0 +1,194 @@
+<project name="fmj.website" default="lti-ftp-upload" basedir=".">
+	<property file="fmj.larsontechnologies.com.properties"/>
+	
+
+	
+	<!-- requires commons-net.jar -->
+	<target name="lti-ftp-upload" description="upload applets/media to fmj.larsontechnologies.com">
+		  
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj"
+		       userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="." includes="*.php"/>
+		  	<fileset dir="." includes="robots.txt"/>
+		  	<fileset dir="." includes="*.ico"/>
+		  	<fileset dir="." includes="sitemap.xml"/>
+		  	<fileset dir="." includes="*.html"/>
+		  </ftp>
+		
+		  <!--ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/data"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="data" includes="**/*.csv"/>
+		  </ftp-->
+		
+		  <!--ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/doc"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="doc" includes="**/*.*"/>
+		  </ftp-->
+		
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/ffmpeg-java"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="ffmpeg-java" includes="**/*.php"/>
+		  </ftp>
+		
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/fmj"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="fmj" includes="**/*.php"/>
+		  </ftp>
+		
+		  <!--ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/images"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="images" includes="**/*.*"/>
+		  </ftp-->
+		
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/include"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="include" includes="**/*.php"/>
+		  </ftp>
+		
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/jmf"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="jmf" includes="**/*.php"/>
+		  </ftp>
+		
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/js"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="js" includes="**/*.*"/>
+		  </ftp>
+		
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/styles"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="styles" includes="**/*.css"/>
+		  </ftp>
+		
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/theora-java"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   verbose="yes"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="theora-java" includes="**/*.php"/>
+		  </ftp>
+		
+		
+		  <!--ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/images/screenshots"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		       passive="yes"
+		  	   binary="yes">
+		    <fileset dir="images/screenshots" includes="*.csv"/>
+		  </ftp-->
+		
+		  <!--ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/images/screenshots/large"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		       passive="yes"
+		  	   binary="yes">
+		    <fileset dir="images/screenshots/large" includes="*.png"/>
+		  </ftp-->
+		  	
+		  <!--ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/images/screenshots/small"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		       passive="yes"
+		  	   binary="yes">
+		    <fileset dir="images/screenshots/small" includes="*.png"/>
+		  </ftp-->
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/include"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="styles" includes="*.php"/>
+		  </ftp>
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/js"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="styles" includes="*.*"/>
+		  </ftp>
+		  <ftp server="www.larsontechnologies.com"
+		       remotedir="fmj/styles"
+		  	   userid="${lti.ftp.user}"
+		       password="${lti.ftp.pass}"
+		       depends="no"
+		  	   passive="yes"
+		  	   binary="yes">
+		    <fileset dir="styles" includes="*.css"/>
+		  </ftp>
+	</target>
+		
+
+
+</project>

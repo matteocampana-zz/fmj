@@ -1,0 +1,38 @@
+Compiling on ubuntu:
+
+install build-essential (http://packages.ubuntu.com/edgy/devel/build-essential) as well.
+
+Build ffmpeg shared libraries (flag to configure)
+
+export LD_LIBRARY_PATH=/usr/local/lib
+
+native example now works.
+
+Running java sample:
+Get:
+
+Compiler did not align stack variables. Libavcodec has been miscompiled
+and may be very slow or crash. This is not a bug in libavcodec,
+but in the compiler. You may try recompiling using gcc >= 4.2.
+
+Occurs during:
+
+(AVFORMAT.av_find_stream_info(pFormatCtx)
+
+Not sure what is messing up the stack?  JNA?  A bug in my code?
+
+./configure --disable-mmx --enable-shared
+
+to see if that helps.
+
+
+
+------------------
+
+development notes:
+
+allformats.c is where protocols, like file:, http: etc are registered.
+
+For FMJ it might be useful to register a custom protocol with callbacks.
+
+It is looking more and more like an additional library will be needed with custom C code, since JNA probably cannot access global variables.

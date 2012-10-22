@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: /images/
+Disallow: /styles/
+Disallow: /include/
+Disallow: /js/
+Disallow: /template.php
+Disallow: /jmf/projects_template.php
+Disallow: /README
+Disallow: /TODO
+Disallow: /google3e8c483d129681bb.html
+Disallow: /test.php
+Sitemap:  http://fmj-sf.net/sitemap.xml

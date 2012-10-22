@@ -1,0 +1,3 @@
+1. Copy paste this move_notice.php and movenotice.png files into the web root
+2. Rename copied move_notice.php into index.php
+3. You may delete the rest of the wbsite content *except* : include/ and styles/ directories and favicon.ico file
