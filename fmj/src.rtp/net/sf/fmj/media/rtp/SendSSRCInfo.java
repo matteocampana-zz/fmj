@@ -107,6 +107,10 @@ public class SendSSRCInfo extends SSRCInfo implements SenderReport, SendStream
         return super.lastSRrtptimestamp;
     }
 
+    public long consumeSequenceNumber()
+    {
+        return ++lastSeq;
+    }
     public long getSenderByteCount()
     {
         return super.lastSRoctetcount;
