@@ -111,6 +111,13 @@ public class SendSSRCInfo extends SSRCInfo implements SenderReport, SendStream
     {
         return ++lastSeq;
     }
+
+    public long consumeSample(double sampleRate)
+    {
+        double tsInterval = (sampleRate / 1000) * 20;
+        return totalSamples += tsInterval;
+    }
+
     public long getSenderByteCount()
     {
         return super.lastSRoctetcount;
